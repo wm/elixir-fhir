@@ -10,7 +10,7 @@ config :ex_fhir, ExFhir.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "cF6bZbDvl5hBy0RUqOZV44uP6SBM2DCzwGRWRTMg217KFNMkeNmz5qu7xTfjlVSx",
   debug_errors: false,
-  pubsub: [adapter: Phoenix.PubSub.PG2]
+  pubsub: [name: ExFhir.Pubsub, adapter: Phoenix.PubSub.PG2]
 
 
 # Configures Elixir's Logger

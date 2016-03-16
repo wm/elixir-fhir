@@ -4,7 +4,7 @@ defmodule ExFhir.Mixfile do
   def project do
     [app: :ex_fhir,
      version: "0.0.1",
-     elixir: "~> 1.0",
+     elixir: "~> 1.2",
      elixirc_paths: ["lib", "web"],
      compilers: [:phoenix] ++ Mix.compilers,
      deps: deps]
@@ -24,6 +24,6 @@ defmodule ExFhir.Mixfile do
   defp deps do
     [{:phoenix, github: "phoenixframework/phoenix"},
      {:cowboy, "~> 1.0"},
-     {:timex, "~> 0.13.3"}]
+     {:timex, "~> 1.0.1"}]
   end
 end
